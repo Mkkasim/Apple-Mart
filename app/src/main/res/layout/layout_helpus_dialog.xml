@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text_rate_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Help us do better"
+        android:textColor="@color/mediumBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_rate_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_rate_us"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="mind givingus a quick feedback ?"
+        android:textColor="@color/darkGrey"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_rate_question"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/helpus" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yeahBtn"
+        android:layout_below="@id/lin1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="Yeah, sure"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/lite_color_primary"
+        android:fontFamily="@font/nunito_semibold" />
+
+    <TextView
+        android:id="@+id/nopeBtn"
+        android:layout_below="@id/lin1"
+        android:layout_toStartOf="@id/yeahBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:text="Nope"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/mediumGrey"
+        android:fontFamily="@font/nunito_semibold" />
+
+</RelativeLayout>

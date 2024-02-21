@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/cart_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/apple_mart_logo" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/cart_img"
+        android:fontFamily="@font/nunito_semibold"
+        android:maxLength="20"
+        android:text="Safeda Mango delicious mango"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_actual_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/cart_img"
+        android:fontFamily="@font/poppins_extrabold"
+        android:maxLength="20"
+        android:text="₹400"
+        android:textColor="@color/mediumBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_fake_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/item_actual_amnt"
+        android:fontFamily="@font/poppins_regular"
+        android:maxLength="20"
+        android:text="₹400"
+        android:textColor="@color/darkGrey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_actual_amnt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/cart_img"
+        android:fontFamily="@font/nunito_semibold"
+        android:maxLength="20"
+        android:text="Safeda Mango delicious mango"
+        android:textColor="@color/darkGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_actual_amnt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_bg_ban"
+        android:elevation="6dp"
+        android:fontFamily="@font/nunito_bold"
+        android:paddingStart="20dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="6dp"
+        android:text="add"
+        android:textColor="@color/greenOffer"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearAddMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_actual_amnt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_orange"
+        android:gravity="center"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="1dp"
+            android:src="@drawable/minus"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/mediumBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="1dp"
+            android:src="@drawable/add" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

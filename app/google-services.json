@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "343584044599",
+    "project_id": "apple-mart-11a4c",
+    "storage_bucket": "apple-mart-11a4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343584044599:android:d9c38ed497eeebf00db1b2",
+        "android_client_info": {
+          "package_name": "com.krash.applemart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343584044599-8t6915kj9nhsveethfjudilt0tgc858a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.krash.applemart",
+            "certificate_hash": "3337b100024c09f20d2a8ed7042d461fec1d7729"
+          }
+        },
+        {
+          "client_id": "343584044599-pqvbv71l3s4dq2aqs2bd38idbmfd473p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZG3jbE9whBxzLlvPWEeqbGPm1uc-fSr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343584044599-pqvbv71l3s4dq2aqs2bd38idbmfd473p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

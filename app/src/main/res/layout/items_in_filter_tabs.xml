@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relate_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/low_to_high"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/darkGrey"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (Low to High)"/>
+
+            <RadioButton
+                android:id="@+id/high_to_low"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/darkGrey"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (High to Low)"/>
+
+            <RadioButton
+                android:id="@+id/popularity"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/darkGrey"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popularity"/>
+
+            <RadioButton
+                android:id="@+id/discount"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/darkGrey"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/relate_sort"
+        android:id="@+id/relate_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/brand1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="brand 1"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/brand2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="brand 2"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/brand3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="brand 3"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/brand4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="brand 4"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/relate_brand"
+        android:id="@+id/relate_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/Type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Type 1"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/Type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Type 2"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/Type3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Type 3"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/Type4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Type 4"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/Type5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Type 5"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/Type6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Type 6"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/relate_type"
+        android:id="@+id/relate_packSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/kg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="1kg"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/kg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="kg2"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/kg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="kg3"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/kg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="kg4"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/kg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="kg5"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/kg6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="kg6"
+            android:buttonTint="@color/colorPrimary"
+            android:textColor="@color/darkGrey"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

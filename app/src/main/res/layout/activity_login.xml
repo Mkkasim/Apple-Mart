@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back" />
+
+
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_below="@id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="login"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/mediumBlack"/>
+
+    <TextView
+        android:id="@+id/login_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_text"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nunito_medium"
+        android:text="We will send an sms with a verification code to this number"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_below="@id/login_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/no_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:text="+91 - "
+            android:textColor="@color/mediumBlack"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/phoneEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/no_code"
+            android:background="@color/white"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:hint="Enter Number"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/mediumBlack"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relate_continue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/gothamrounded_bold"
+        android:text="Send Otp"
+        android:textColor="@color/mediumBlack"
+        android:textSize="16sp"
+        app:rippleColor="@color/liteGrey" />
+
+    <RelativeLayout
+        android:id="@+id/relate_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/by_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_medium"
+            android:text="By continuing, you agree to our "
+            android:textColor="@color/darkGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/by_continue"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/by_continue"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="Terms of Service"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/and"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/by_continue"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/terms"
+                android:fontFamily="@font/nunito_medium"
+                android:text="And"
+                android:textColor="@color/darkGrey"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/by_continue"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/and"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="Privacy Policy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</layout>

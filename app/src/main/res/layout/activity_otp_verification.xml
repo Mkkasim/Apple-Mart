@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.OtpVerificationActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back" />
+
+
+    <TextView
+        android:id="@+id/Otp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="verification code"
+        android:textColor="@color/mediumBlack"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/otp_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Otp_text"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nunito_medium"
+        android:text="We've sent a verification code to-"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/otp_phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_desc"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nunito_medium"
+        android:text="+1 8888999912"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp" />
+
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_phone_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimary"
+        app:bar_active_color="@color/colorPrimary"
+        app:bar_enabled="true"
+        app:bar_error_color="@color/red"
+        app:bar_height="4dp"
+        app:bar_inactive_color="#F3D1AF"
+        app:bar_success_color="#48D32F"
+        app:height="40dp"
+        app:length="6"
+        app:otp=""
+        app:otp_text_size="24dp"
+        app:width="40dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gothamrounded_bold"
+        android:text="Verify"
+        android:textColor="@color/mediumBlack"
+        android:textSize="16sp"
+        app:rippleColor="@color/liteGrey" />
+
+    <TextView
+        android:id="@+id/text_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/verify_otp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="resend verification code in "
+        android:textColor="@color/darkGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/verify_otp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/text_resend"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="2:00"
+        android:textColor="@color/darkGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/resend_code_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text_resend"
+        android:layout_above="@id/verify_otp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="resend code >"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+</layout>

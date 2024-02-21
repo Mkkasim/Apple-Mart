@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.j-yun:Vertical-TabLayout:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/76ba1d2008bb78854672a17bc5d25626/transformed/jetified-Vertical-TabLayout-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/76ba1d2008bb78854672a17bc5d25626/transformed/jetified-Vertical-TabLayout-1.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/76ba1d2008bb78854672a17bc5d25626/transformed/jetified-Vertical-TabLayout-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c19b6853a049d09de65f91ebb23f9609/transformed/jetified-Vertical-TabLayout-1.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c19b6853a049d09de65f91ebb23f9609/transformed/jetified-Vertical-TabLayout-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c19b6853a049d09de65f91ebb23f9609/transformed/jetified-Vertical-TabLayout-1.0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.j-yun/Vertical-TabLayout/1.0.2/93b1f1e9955387481ad5e979940c0429d8ee1735/Vertical-TabLayout-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Fragments.CategoryFragment">
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="all categories"
+        android:textSize="22sp"
+        android:textColor="@color/mediumBlack"
+        android:fontFamily="@font/gothamrounded_bold"/>
+    <TextView
+        android:id="@+id/text_category_des"
+        android:layout_below="@id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="curated with the best range of products"
+        android:textSize="14sp"
+        android:textColor="@color/darkGrey"
+        android:fontFamily="@font/nunito_semibold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_category"
+        android:layout_below="@id/text_category_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEBD7"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/text_avail_or_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temporarily unavailable"
+                android:textColor="@color/mediumBlack"
+                android:textSize="20sp"
+                android:fontFamily="@font/gothamrounded_bold"/>
+
+            <TextView
+                android:id="@+id/text_avail_des"
+                android:layout_below="@id/text_avail_or_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="please come back later"
+                android:textColor="@color/mediumBlack"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_extrabold"/>
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_below="@id/text_avail_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="40"
+                android:text="Sector 2, Vashi, Navi Mumbai,Maharashtra"
+                android:textColor="@color/darkGrey"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text_avail_des"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/next"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gothamrounded_bold"
+        android:text="set this location"
+        android:textAllCaps="false"
+        android:textColor="@color/mediumBlack"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:elevation="5dp"
+        android:background="@drawable/btn_orange" />
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Fragments.OffersFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relate_offer_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_offer_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="offer zone"
+                android:textColor="@color/mediumBlack"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_extrabold"/>
+            <TextView
+                android:id="@+id/text_offer_zone_des"
+                android:layout_below="@id/text_offer_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="the best of offers on everyday essential for you"
+                android:textColor="@color/darkGrey"
+                android:textSize="12sp"
+                android:fontFamily="@font/nunito_extrabold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyc_offer_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_offer_zone_des"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:nestedScrollingEnabled="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_bank"
+            android:layout_below="@id/relate_offer_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bank and wallet offers"
+                android:textColor="@color/mediumBlack"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_extrabold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyc_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_bank"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:nestedScrollingEnabled="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_trending_brands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relate_bank"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_trending_brands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="trending brands"
+                android:textColor="@color/mediumBlack"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyc_trending_brands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_trending_brands"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:nestedScrollingEnabled="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_trending_offers"
+            android:layout_below="@id/relate_trending_brands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_trending_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="trending offers"
+                android:textColor="@color/mediumBlack"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_extrabold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyc_trending_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_trending_offer"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:nestedScrollingEnabled="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_slider1"
+            android:layout_below="@id/relate_trending_offers"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relate_exclusive"
+            android:layout_below="@id/relate_slider1">
+            <TextView
+                android:id="@+id/text_exclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/mediumBlack"
+                android:textSize="18sp"
+                android:text="exclusive finds"
+                android:fontFamily="@font/gothamrounded_bold"/>
+
+            <LinearLayout
+                android:layout_below="@id/text_exclusive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/lite_color_primary"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp" />
+
+                        <TextView
+                            android:id="@+id/exclusive1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:text="organic \nhealthy living"
+                            android:textColor="@color/mediumBlack"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/lite_color_primary"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp" />
+
+                        <TextView
+                            android:id="@+id/exclusive2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:text="organic \nhealthy living"
+                            android:textColor="@color/mediumBlack"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/lite_color_primary"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp" />
+
+                        <TextView
+                            android:id="@+id/exclusive3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:text="organic \nhealthy living"
+                            android:textColor="@color/mediumBlack"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_slider2"
+            android:layout_below="@id/relate_exclusive"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_banner"
+            android:layout_below="@id/relate_slider2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/apple_mart_logo"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relate_slider3"
+            android:layout_below="@id/relate_banner"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="30dp">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

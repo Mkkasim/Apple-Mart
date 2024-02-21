@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.ProductsVariantsActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:id="@+id/relatetoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/toolText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/backBtn"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="vegetable fruits"
+                android:textColor="@color/mediumBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/topSheetCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolText"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/backBtn"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="see all categories"
+                android:textColor="@color/greenOffer"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/bottomShow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/toolText"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/topSheetCategory"
+                android:background="@drawable/more_down"
+                android:backgroundTint="@color/greenOffer" />
+            <ImageView
+                android:id="@+id/searchBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/search"
+                android:backgroundTint="@color/darkGrey" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearVariant"
+        android:layout_below="@id/line1"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyc_variant_main"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_in_main_home"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_toEndOf="@id/linearVariant">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relateVariantProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/totalProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="total products"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_extrabold"/>
+
+                <ImageView
+                    android:id="@+id/imageBan"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/totalProducts"
+                    android:src="@drawable/apple_mart_logo" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycVariantProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relateVariantProducts"
+                android:layout_marginBottom="30dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_ban"
+        android:layout_marginTop="10dp"
+        android:elevation="8dp"
+        android:layout_below="@id/line1"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/filter"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</layout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/lite_color_primary"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ban_img"
+                android:layout_width="260dp"
+                android:layout_height="150dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_title_ban1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:text="sunny days \nare here !"
+                android:textAlignment="textStart"
+                android:textColor="@color/mediumBlack"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_des_ban1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_title_ban1"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/proxima_nova"
+                android:text="make the most\nof summer"
+                android:textAlignment="textStart"
+                android:textColor="@color/mediumBlack"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_btn_ban1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_des_ban1"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:background="@drawable/btn_bg_ban"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="shop now"
+                android:textAlignment="textStart"
+                android:textColor="@color/mediumBlack"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

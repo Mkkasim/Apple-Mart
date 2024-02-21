@@ -1,0 +1,1910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Ui.Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/location_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/delivery_in_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="delivery in 10 minutes"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/now_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delivery_in_10"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLength="30"
+            android:text="Sector 2,Vashi, Thane, Mumbai"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/next" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_click"
+        android:layout_below="@id/location_top"
+        android:background="@drawable/search_bg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="@color/darkGrey"
+            android:background="@drawable/search" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/img_search"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Search here"
+            android:textColor="@color/darkGrey"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/search_click"
+        android:nestedScrollingEnabled="true"
+        android:backgroundTint="@color/white"
+        android:scrollbars="none"
+        android:overScrollMode="always"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relate_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+                <TextView
+                    android:id="@+id/seeMoreMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recyc_all"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/recyc_all"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/relate_main"
+                android:id="@+id/relate_home_ban1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_home_ban1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true"
+                    android:padding="10dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_must_try"
+                android:layout_below="@id/relate_home_ban1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_must_try"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="must try"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nunito_extrabold"/>
+                <TextView
+                    android:id="@+id/text_must_try_des"
+                    android:layout_below="@id/text_must_try"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore these exciting fruits"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/nunito_extrabold"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_mustry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_must_try_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_got_covered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_must_try"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_we_got_covered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="we got you covered"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/we_got_covered_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_we_got_covered"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="for all your needs"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_got_covered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/we_got_covered_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_fruits_vegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_got_covered"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_fruits_vegetable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="fruits and Vegetables"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fruits_vegetable_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_fruits_vegetable"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="eat fresh, stay healthy"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreFruits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_fruits_vegetables"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fruits_vegetable_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_carausel"
+                android:layout_below="@id/relate_fruits_vegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/carousel_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintDimensionRatio="3:2">
+
+                    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                        android:id="@+id/carousel"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_summer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_carausel"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_summer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="beat the summer heat"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/summer_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_summer"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="with these refreshing treats"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_summer_drinks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/summer_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_just_chill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_summer"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_just_chill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="just chill!"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/just_chill_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_just_chill"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="drinks, ice cream and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreJustChll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_just_chill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/just_chill_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_feel_fresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_just_chill"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_feel_fresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="feel fresh all day"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/feel_fresh_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_feel_fresh"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="keep calm and freshen up!"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_feel_fresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feel_fresh_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_sun_safe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_feel_fresh"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_sun_safe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="let's be sun safe"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sun_safe_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_sun_safe"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="protect yoursself from the heat!"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreSunSafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_sun_safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sun_safe_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_top_selling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_sun_safe"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_top_selling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="top selling items"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/top_selling_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_top_selling"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="available at best prices"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreTopSelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_top_selling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_selling_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_everyday_buys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_top_selling"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_everyday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="everyday buys"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/every_day_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_everyday"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="daily essentials on the go"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreEveryDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_everyday_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/every_day_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_kwality_walls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_everyday_buys"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_kwality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="kwality walls"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/kwality_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_kwality"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="yummy desserts with great discounts"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreKwality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_kwality_walls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kwality_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_chemist_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_kwality_walls"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_chemist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="chemist store"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/chemist_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_chemist"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="get pain relievers,dettol and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreChemist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_chemist_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chemist_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_daily_essentials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_chemist_store"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_dailyessential"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="daily essentials"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daily_essential_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_dailyessential"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="look and feel your best"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreDailyEss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_daily_essential"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/daily_essential_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_snacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_daily_essentials"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_snacks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="biscuits, snack chocolates"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/snacks_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_snacks"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="namkeen, biscuits, chips and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreSnacks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_snacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/snacks_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_banner"
+                android:layout_below="@id/relate_snacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/apple_mart_logo"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_banner"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="breakfast and dairy"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/breakfast_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_breakfast"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="butter, cheese, milk, curd and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreBreakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/breakfast_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_drinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_breakfast"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_drinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="drinks"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/drinks_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_drinks"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="tea, coffee, juices and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreDrinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_drinks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/drinks_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_noodles_instant_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_drinks"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_noodles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="noodles and instant food"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/noodles_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_noodles"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="noodles, pasta, ketchup, soup and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreNoodles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_noodles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/noodles_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_products_in_spot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_noodles_instant_food"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="products in spotlight"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/products_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_products"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="protect yoursself from the heat!"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/products_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_organic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_products_in_spot"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_organic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="organic and healthy living"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/organic_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_organic"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="give your meals a healthy twist"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreOrganic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_organic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/organic_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_non_veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_organic"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_non_veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="non-veg delights"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/non_veg_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_non_veg"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="chicken, seafood and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreNonVeg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_non_veg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/non_veg_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_best_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_non_veg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_best_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="best value"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/best_value_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_best_value"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="great quality, great prices"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreBest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_best_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/best_value_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_lowest_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_best_value"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_lowest_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="lowest price"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lowest_price_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_lowest_price"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="pay less, save more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreLowest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_lowest_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lowest_price_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_personal_care"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_lowest_price"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_personal_care"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="personal care"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/personal_care_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_personal_care"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="soaps, shampoos, hair oils and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMorPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_personal_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personal_care_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_household"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_personal_care"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_households"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="household items"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/household_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_households"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="cleaners, detergents, repellents and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreHouseItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_househholds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/household_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_slider1"
+                android:layout_below="@id/relate_household"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="30dp">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_grocery_staples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_slider1"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_grocery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="grocery and staples"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/grocery_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_grocery"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="atta, dal, rice and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreGrocery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_grocery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grocery_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_frozen_delights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_grocery_staples"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_frozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="frozen delights"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/frozen_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_frozen"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="tikki, nuggets, peas and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreFrozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_frozen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/frozen_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_house_accessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_frozen_delights"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_house_accesories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="household accessories"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/house_accesories_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_house_accesories"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="freshners, tissues and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreAccessories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/house_accesories_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_wellness_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_house_accessories"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_wellness_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="wellness store"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/wellness_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_wellness_store"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="masks, sanitary pads, antiseptics and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreWellness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_wellness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wellness_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_kitchen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_wellness_store"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_kitchen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="kitchen essential"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/kitchen_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_kitchen"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="spices, oil, ghee, nuts and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreKitchen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_kitchen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kitchen_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_babycare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_kitchen"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_baby_care"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="baby care"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/babycare_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_baby_care"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="only the best for your little one"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreBabycare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_baby_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/babycare_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relate_kids_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relate_babycare"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_kids_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="kids store"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/kids_store_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_kids_store"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="stationery supplies, toys and more"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/seeMoreKidsStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="see all"
+                    android:textColor="@color/mediumBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/next" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyc_kids_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kids_store_des"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:nestedScrollingEnabled="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/relate_kids_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_cant_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Can't find\nwhat you're\nlooking for?"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/mediumGrey"
+                    android:fontFamily="@font/gothamrounded_bold"/>
+
+                <TextView
+                    android:id="@+id/text_raise_product"
+                    android:layout_below="@id/text_cant_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="raise a product request and we'll get it soon."
+                    android:textSize="16sp"
+                    android:textColor="@color/darkGrey"
+                    android:fontFamily="@font/poppins_extrabold"/>
+
+                <TextView
+                    android:id="@+id/text_suggest"
+                    android:layout_below="@id/text_raise_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="suggest products"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito_extrabold"/>
+
+                <ImageView
+                    android:layout_toEndOf="@id/text_suggest"
+                    android:layout_below="@id/text_raise_product"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/next"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

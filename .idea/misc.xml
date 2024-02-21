@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable-v24/bg_border.xml" value="0.1735" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable-v24/btn_bg_ban.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable-v24/btn_green.xml" value="0.1945" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable-v24/btn_orange.xml" value="0.1815" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable-v24/product_image_border.xml" value="0.171" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/back.xml" value="0.156" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/bg_bottom_round.xml" value="0.1735" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/bg_green_border.xml" value="0.1815" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.135" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/cart.xml" value="0.1585" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/filter.xml" value="0.1655" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/green_offer.xml" value="0.2005" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/more_down.xml" value="0.171" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/product_border.xml" value="0.2005" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/search.xml" value="0.1585" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/search_bg.xml" value="0.136" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/drawable/see_less.xml" value="0.1655" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_about_us.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_address_book.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_all_products.xml" value="0.17272338606241983" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_cart.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_customer_support.xml" value="0.18426678067550234" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_filter.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_location.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_notification.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_order_history.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_otp_verification.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_product_details.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_products_variants.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_search.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/bottom_sheet_category_dialog.xml" value="0.18426678067550234" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/fragment_account.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/fragment_category.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/fragment_offers.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_all_products_buy.xml" value="0.33" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_got_covered.xml" value="0.33" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_home_ban1.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_imageview_product.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_in_cart.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_in_main_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_line.xml" value="0.33" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_must_try.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_trending_brand.xml" value="0.18426678067550234" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_trending_offers.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_trending_search.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/item_variants_products.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/items_in_filter_tabs.xml" value="0.22" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/layout_give_star_dialog.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/layout_helpus_dialog.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/layout_rateus_dialog.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/top_sheet_dialog.xml" value="0.18426678067550234" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/layout/view_tab_item.xml" value="0.25" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/menu/chip_menu_bottom_nav.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android Studio/applemart/app/src/main/res/menu/menu_main.xml" value="0.18426678067550234" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
